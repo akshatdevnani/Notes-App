@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity">
+
+    <EditText
+        android:id="@+id/addNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:hint="Add Note"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/noteDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="72dp"
+        android:background="@null"
+        android:gravity="top|start"
+        android:hint="Note Details"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="10dp"
+        android:lines="6"
+        android:maxLines="10"
+        android:minLines="6"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNote" />
+
+    <Button
+        android:id="@+id/addNoteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:text="Add Note"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/noteDetails"
+        app:layout_constraintTop_toBottomOf="@+id/addNote" />
+
+
+</android.support.constraint.ConstraintLayout>
